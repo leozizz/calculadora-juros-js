@@ -12,10 +12,10 @@ console.log("Aplicação de Juros:\n")
 divida.valorDivida = entradaDados.question("Informe o valor devido: R$ ")
 divida.diasAtraso = entradaDados.question("Informe quantos dias se passaram desde o vencimento do boleto: ")
 
-if (divida.valorDivida == 0) {
+if (divida.valorDivida <= 0) {
     console.log("\nVocê não tem dividas em aberto")
 }
-else if (divida.diasAtraso == 0) {
+else if (divida.diasAtraso <= 0) {
     console.log("\nVocê não tem dividas em atraso")
 }
 else if (divida.diasAtraso <= 15) {
