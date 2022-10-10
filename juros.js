@@ -22,16 +22,15 @@ else if (divida.diasAtraso == 0)
 else if (divida.diasAtraso <= 15) 
 {
     juros = 5
-    let valorJuros = (Number(divida.valorDivida) / 100) * juros
-    let totalDivida = Number(divida.valorDivida) + valorJuros
-    console.log(`\nValor original da dívida: R$ ${divida.valorDivida}`)
-    console.log(`Dias atrasados: ${divida.diasAtraso} dias`)
-    console.log(`Taxa de Juros: ${juros}%`)
-    console.log(`Valor total com juros: R$ ${totalDivida}`)
+    calculaJuros(juros)
 } 
 else 
 {
-    let juros = 10
+    juros = 10
+    calculaJuros(juros)
+}
+
+function calculaJuros(juros) {
     let valorJuros = (Number(divida.valorDivida) / 100) * juros
     let totalDivida = Number(divida.valorDivida) + valorJuros
     console.log(`\nValor original da dívida: R$ ${divida.valorDivida}`)
