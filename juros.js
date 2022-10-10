@@ -14,18 +14,15 @@ divida.diasAtraso = entradaDados.question("Informe quantos dias se passaram desd
 
 if (divida.valorDivida == 0) {
     console.log("\nVocê não tem dividas em aberto")
-} 
-else if (divida.diasAtraso == 0) 
-{
+}
+else if (divida.diasAtraso == 0) {
     console.log("\nVocê não tem dividas em atraso")
-} 
-else if (divida.diasAtraso <= 15) 
-{
+}
+else if (divida.diasAtraso <= 15) {
     juros = 5
     calculaJuros(juros)
-} 
-else 
-{
+}
+else {
     juros = 10
     calculaJuros(juros)
 }
